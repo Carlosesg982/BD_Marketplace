@@ -1,6 +1,7 @@
 {% extends 'core/base.html' %}
 
 {% block content %}
+<div class="bg-fondo">
 <div class="row">
     <div class="col-md-4">
         <div class="card">
@@ -33,20 +34,23 @@
                     </div>
 
                 </div>
+                
+                    <button type="submit" class="btn bg-verde_menta text-light vstack mx-auto" type="submit">Publicar</button>
                
-                <button class="btn btn-primary  mt-3" type="submit">Publicar</button>
             </form>
         </div>
     </div>
-    <div class="col-md-8">
+    <div class="col-md-8 ms-auto">
         <div class="card w-75 h-75">
             <div class="container-fluid">
                 <img class="d-block h-75" src="/media/logo.png" alt="Algo salio mal">
+                <div class="position-absolute top-100 w-100">
+                    <input class="form-control mt-3" type="file" id="formFileMultiple" multiple>
+                </div>
             </div>
         </div>
-        <input class="form-control w-75" type="file" id="formFileMultiple" multiple>
     </div>
 </div>
-
+</div>
 
 {% endblock %}

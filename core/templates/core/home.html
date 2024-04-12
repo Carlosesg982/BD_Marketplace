@@ -2,12 +2,12 @@
 
 {% block content %}
 {% if request.user.is_authenticated %}
-<d class="row">
-    <div class="card">
-      <h3>Bienvenido {{user.username}}</h3>
-      <h6>Recomendaciones para Ti</h6>
 
-   
+    <div class="card shadow rounded w-100 h-25">
+      <h3 class="px-3">Bienvenido {{user.username}}</h3>
+      <h6 class="px-3">Recomendaciones para Ti</h6>
+
+      <div class="card-body">
             <div id="carouselExampleIndicators" class="carousel slide">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -34,9 +34,9 @@
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
- 
+      </div>
     </div>
-</d>
+
 
   <!--
   <div class="col-md-4">
@@ -55,7 +55,7 @@
         <p> {%lorem%}</p>
     </div>
 -->
-</div>
+
 {% else %}
     <div class="card shadow rounded w-100 h-25 ">
         <div class="card-body">

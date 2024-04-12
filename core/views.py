@@ -20,9 +20,9 @@ def publicar(request):
 def Ventas_Publicadas(request):
     return render(request, 'Venta/VentasPublicadas.html')
 
-@login_required
+"""@login_required
 def products(request):
-    return render(request, 'core/products.html')
+    return render(request, 'core/products.html')"""
 
 def exit(request):
     logout(request)
